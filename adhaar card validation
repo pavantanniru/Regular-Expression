@@ -1,0 +1,15 @@
+import re
+st = "4690 1899 5932"
+f = re.search(r'^\d{4}\s\d{4}\s\d{4}$',st)
+if f:
+    print("Yes match!")
+else:
+    print("No match!")
+
+import re
+st = "Following is 4690 1899 5932 My Aadhar Card Number"
+f = re.search(r'\b\d{4}\s\d{4}\s\d{4}\b',st)
+if f:
+    print("Yes match!")
+else:
+    print("No match!")
